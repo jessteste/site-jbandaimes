@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jb Andaimes</title>
+   <!--Ionicons -->
+   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+   <!-- Bootstrap Scripts -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- favicon-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <link rel="icon" href="./assets/images/iconejb.png" type="image/x-icon">
+
+  <!--css-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+
+  <!-- google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+      @font-face {
+    font-family: 'Gilroy';
+    src: url('path/to/gilroy-regular.woff2') format('woff2'),
+         url('path/to/gilroy-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .popup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background: linear-gradient(135deg, #ffffff, #a3d2ee);
+      color: #eb5904;
+      font-size: 16px;
+      z-index: 9999;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    </style>
+  <script>
+    // Function to display the popup message
+    function showPopup(message) {
+      const popup = document.createElement("div");
+      popup.className = "popup";
+      popup.textContent = message;
+      document.body.appendChild(popup);
+
+      // Automatically close the popup after 3 seconds
+      setTimeout(function () {
+        popup.remove();
+      }, 3000);
+    }
+  </script>
+</head>
+
+<body id="top">
+  <!-- HEADER
+   <div class="header-b" data-header>
+      <div class="container">
+        <ul class="contact-list">
+          <img src="./assets/images/Logo.png" width="300" height="300" >
+          <nav class="navbar container" data-navbar>
+            <ul class="navbar-list">
+              <li>
+                <a href="index.html" class="navbar-link" data-nav-link>INICIO</a>
+              </li>
+              <li>
+                <a href="#equipamentos.html" class="navbar-link" data-nav-link>EQUIPAMENTO</a>
+              </li>
+              <li>
+                <a href="contact.php" class="navbar-link" data-nav-link>CONTATO</a>
+              </li>
+            </ul>
+          </nav>
+          <li class="contact-item">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+            <a href="tel:+(92) 99152-8886 " class="contact-link">(92) 99152-8886
+            </a>
+          </li>
+        </ul>
+        <ul>
+        <button class="btn-custom">ALUGUE AGORA</button>
+        <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+          <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+        </button>
+      </ul>
+      </div>
+   
+
+
+    <div class="container2">
+      <li class="contact-item">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <a href="tel:+(92) 99152-8886 " class="contact-link">(92) 99152-8886
+        </a>
+      </li>
+    </div>
+
+
+
+    <div class="container3">
+      <li class="contact-item">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <a href="tel:+(92) 99152-8886 " class="contact-link">(92) 99152-8886
+        </a>
+      </li>
+    </div>
+  </div>
+  </header>
+-->
+
+
+
+<header class="header">
+  <div class="header-bottom">
+    <div class="container">
+      
+      <img href="#" class="logo" src="./assets/images/Logo.png" width="300" height="300">
+      
+      <nav class="navbar container" data-navbar>
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>INICIO</a>
+          </li>
+          <li>
+            <a href="#equipamentos.html" class="navbar-link" data-nav-link>EQUIPAMENTO</a>
+          </li>
+          <li>
+            <a href="contact.php" class="navbar-link" data-nav-link>CONTATO</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Adicionando uma nova classe para separar essa seção dos contatos -->
+      <div class="contact-container">
+        <ul class="contact-list">
+       
+          
+       
+          
+          
+        </ul>
+      </div>
+      <img href="#" class="logo" src="./assets/images/whats.JPG" width="180" height="180">
+      <a href="register.php" class="btn">ALUGUE AGORA</a>
+      
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <ion-icon name="menu-sharp" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-sharp" aria-hidden="true" class="close-icon"></ion-icon>
+      </button>
+    </div>
+  </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+  <main>
+    <article>
+     
+
+
+
+
+
+  
+      
+    
+
+
+        <section>
+            <div class="container">
+                <!-- Layout para telas grandes (desktop) -->
+                <div class="d-none d-md-flex align-items-start">
+                    <!-- Imagem principal e miniaturas abaixo dela -->
+                    <div class="text-center" style="margin-right: 20px;">
+                        <!-- Imagem principal com margem superior para espaçamento -->
+                        <div class="main-image-container" style="margin-top: 50px;">
+                            <img id="main-image-large" src="assets/images/escoramento/escoramento1.png" alt="Renault Master" style="width: 100%; max-width: 200px; height: auto;">
+                        </div>
+        
+                        <!-- Miniaturas centralizadas abaixo da imagem principal, com alinhamento à esquerda -->
+                        <div class="thumbnail-container d-flex justify-content-center mt-3 flex-wrap" style="margin-left: -20%;">
+                            <img src="assets/images/escoramento/escoramento2.png" class="thumbnail-img" onclick="changeImageLarge(this)" style="width: 80px; margin: 5px; cursor: pointer;">
+                            <img src="assets/images/escoramento/escoramento1.png"  class="thumbnail-img"onclick="changeImageLarge(this)" style="width: 80px; margin: 5px; cursor: pointer;">
+                            <img src="assets/images/escoramento/escoramento3.png"  class="thumbnail-img"onclick="changeImageLarge(this)" style="width: 80px; margin: 5px; cursor: pointer;">
+                     
+                        </div>
+                        
+                    </div>
+        
+                    <!-- Detalhes do produto -->
+                    <div class="product-details" style="max-width: 50%; margin-top: 50px;" >
+                       
+                        <h1 style="font-size: 3.5rem;">ESCORAMENTO DE TORRES MODULARES <p> Normatizados NR-18</p></h1>
+              
+                        <p>
+                            O escoramento de torres modulares têm a função de fornecer acessos à trabalhos em altura, com segurança e praticidade
+                        </p>
+        
+                        <!-- Botões de ação -->
+                        <div class="product-buttons mt-7">
+                            
+                            <button href="error.html"class=" btn-primary rounded-btn">Alugar</button>
+                         
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Layout para telas pequenas (mobile) -->
+                <div class="d-block d-md-none">
+                    <!-- Estrutura da imagem principal e miniaturas no mobile -->
+                    <div class="text-center mt-3">
+                        <img id="main-image-small" src="assets/images/escoramento/escoramento1.png" alt="Renault Master" style="max-width: 200px; height: auto;">
+                    </div>
+        
+                    <!-- Miniaturas centralizadas abaixo da imagem principal no mobile -->
+                    <div class="thumbnail-container d-flex justify-content-center mt-3">
+                        <img src="assets/images/escoramento/escoramento2.png" onclick="changeImageSmall(this)" style="width: 80px; margin: 5px; cursor: pointer;">
+                        <img src="assets/images/escoramento/escoramento1.png" onclick="changeImageSmall(this)" style="width: 80px; margin: 5px; cursor: pointer;">
+                        <img src="assets/images/escoramento/escoramento3.JPG" onclick="changeImageSmall(this)" style="width: 80px; margin: 5px; cursor: pointer;">
+                  
+
+      
+                    </div>
+        
+                    <!-- Detalhes do produto no mobile -->
+                    <div class="text-center mt-3">
+                        <h1 style="font-size: 1.5rem;">ESCORAMENTO<p> Normatizados NR-18</p></h1>
+                        <ul class="list-unstyled" style="font-size: 1rem;">
+                            <li>O escoramento de torres modulares têm a função de fornecer acessos à trabalhos em altura, com segurança e praticidade</li>
+                        
+                        </ul>
+                        <p style="font-size: 0.9rem;">
+                            Se você está interessado em adquirir a Renault Master L3H2 Executiva Original de Fábrica, basta clicar no botão "Comprar Agora" abaixo. Você será direcionado a um dos nossos atendentes, que estará pronto para ajudá-lo.
+                        </p>
+                        <a href="error.html"><button class="btn btn-primary btn-sm">Comprar Agora</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Script de troca de imagens -->
+        <script>
+            function changeImageLarge(img) {
+                document.getElementById("main-image-large").src = img.src;
+            }
+            function changeImageSmall(img) {
+                document.getElementById("main-image-small").src = img.src;
+            }
+        </script>
+        
+
+
+        <div class="main-image-container" style="margin-top: 50px;">
+           
+        </div>
+
+
+
+
+  <!--FOOTER-->
+  
+      
+      <!--services-->
+      <footer id="home" style="background-image: url('./assets/images/footerfinal.png'); padding: 80px 0;" aria-label="hero">
+    
+      <div class="container">
+        <div class="footer-brand">
+          <img src="./assets/images/Logo.png" width="400" height="400" >
+        
+        </div>
+        <ul class="footer-list">
+          <li>
+            <p class="footer-list-title">ATENDIMENTO</p>
+          </li>
+      
+          <div class="schedule">
+            <div class="schedule-icon">
+              <ion-icon name="time-outline"></ion-icon>
+            </div>
+            <span class="span" color="orange-line">
+              
+              <b >Segunda a quinta:</b>8h às 12h/13 às 16:45
+              <li class="f">
+              <b>Sexta:</b> 8h às 12h/13h às 15:45
+              </li>
+            </span>
+          </div>
+         
+     
+        </ul>
+       
+        <ul class="f">
+          <div class="social-icons d-flex justify-content-center">
+            <a href="https://www.instagram.com" target="_blank" class="me-3">
+                <i class="bi bi-instagram" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook" style="font-size: 24px;"></i>
+            </a>
+        </div>
+        
+          <li>
+            <p class="footer-list-title">CONTATO</p>
+          </li>
+    
+            <li class="f">
+              <div class="item-icon">
+                <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+              </div>
+              <a href="tel:+9191528886" class="footer-link">(92) 99152-8886</a>
+            </li>
+          
+            <li class="f">
+              <div class="item-icon">
+                <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+              </div>
+              <a href="tel:+91981517251" class="footer-link">(92) 98151-7251</a>
+            </li>
+          
+            <li class="f">
+              <div class="item-icon">
+                <i class="bi bi-whatsapp" style="font-size: 24px;"></i>
+              </div>
+              <a href="tel:+91981517253" class="footer-link">(92) 98151-7253</a>
+            </li>
+          
+          
+         
+         
+        </ul>
+      </div>
+
+    
+  </footer>
+</section>
+
+
+
+<!--Botão whatsapp-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://www.seusite.com.br/whatsapp/" target="_blank">
+    <div class="btn-whatsapp pulsaDelay"><i class="fa fa-whatsapp"></i></div>
+</a>
+<!--Botão whatsapp-->
+  <!--BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!--custom js link-->
+  <script src="./assets/js/script.js" defer></script>
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
